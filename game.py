@@ -20,7 +20,7 @@ class player:
 myPlayer = player()
 
 #### Title Screen ####
-def title_screen_selection():
+def title_screen_selections():
     option = input("> ")
     if option.lower() == ("play"):
         start_game() # placeholder until written
@@ -37,3 +37,16 @@ def title_screen_selection():
         help_menu()
     elif option.lower() == ("quit"):
         sys.exit()
+
+def title_scree():
+    os.system('clear')
+    print('###########################')
+    print(' #Welcome to the Text RPG!#')
+    print('###########################')
+    print('         -Play-            ')
+    print('         -Help-            ')
+    print('         -Quit-            ')
+    print('Copyright 2023 Matt Tomchik')
+    title_screen_selections()
+
+def help_menu():
