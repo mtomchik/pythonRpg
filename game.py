@@ -17,6 +17,7 @@ class player:
         self.hp = 0
         self.mp = 0
         self.status_effects= []
+        self.location= 'start'
 myPlayer = player()
 
 #### Title Screen ####
@@ -59,4 +60,32 @@ def help_menu():
     print('- Good luck and have fun')
     title_screen_selections()
 
+
+#### GAME FUNCTIONALITY ####
 def start_game():
+
+
+
+#### MAP ###
+    """
+a1 a2... # PLAYER STARTS AT b2
+-----------------
+|   |   |   |   |a4
+-----------------
+|   |   |   |   |b4...
+-----------------
+|   |   |   |   |
+-----------------
+|   |   |   |   |
+"""
+
+
+DESCRIPTION = 'description'
+EXAMINATION = 'examine'
+SOLVED = False
+UP = 'up', 'north'
+DOWN = 'down', 'south'
+LEFT = 'left', 'west'
+RIGHT ='right', 'east'
+
+solved_places = {'a1': False,}
