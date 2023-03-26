@@ -50,3 +50,13 @@ def title_scree():
     title_screen_selections()
 
 def help_menu():
+    print('###########################')
+    print(' #Welcome to the Text RPG!#')
+    print('###########################')
+    print('- Use up, down, left, right to move')
+    print('- Type your commands to do them')
+    print('- Use "look" to inspect something')
+    print('- Good luck and have fun')
+    title_screen_selections()
+
+def start_game():
